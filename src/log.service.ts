@@ -7,8 +7,5 @@ export class LogService {
 
   log(message: string) {
     console.log(`[LOG] ${message}`);
-    if (message.includes('resent')) {
-      this.notificationService.sendNotification('', '', '');
-    }
   }
 }
