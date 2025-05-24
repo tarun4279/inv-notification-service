@@ -1,9 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { NotificationService } from './notification.service';
 
 @Injectable()
 export class LogService {
-  constructor(private readonly notificationService: NotificationService) {}
+  constructor() {}
 
   log(message: string) {
     console.log(`[LOG] ${message}`);
